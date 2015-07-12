@@ -1,6 +1,7 @@
 require 'spec_helper'
+require 'helper/backend/dryrun_ssh'
 
-set :backend, :ssh
+set :backend, :dryrun_ssh
 
 describe Specinfra::Backend::Ssh do
   describe '#build_command' do
